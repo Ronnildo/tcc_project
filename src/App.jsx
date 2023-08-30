@@ -1,23 +1,23 @@
+import { BrowserRouter, Route, RouterProvider, Routes, createBrowserRouter } from 'react-router-dom';
 import './App.css'
+import LoginPage from './pages/login/Login';
+import HomePage from "./pages/home/Home";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LoginPage />
+  },
+  {
+    path: "/home",
+    element: <HomePage />
+  }
+])
 
 function App() {
-  //const windowSize = useRef([window.innerWidth, window.innerHeight])
   return (
-    <>
-      <div class="main-content">
-        <div id="container">
-          <h1>Sing In</h1>
-
-          <input type="email" name="E-mail" id="form-input" placeholder='E-mail' />
-          <input type="password" name="Password" id="form-input" placeholder='Password' />
-
-          <a href="">Reset password?</a>
-
-          <input type="button" value="Sing In" />
-        </div>
-      </div>
-    </>
+    <RouterProvider router={router}/> 
   )
 }
 
-export default App
+export default App;
