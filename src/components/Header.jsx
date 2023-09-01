@@ -7,8 +7,8 @@ const Header = ({styles}) => {
         </div>
 
         <div className={styles.user}>
-            <h2 id={styles.userAb}>US</h2>
-            <h2 id={styles.userName}>Name</h2>
+            <h2 id={styles.userAb}>RS</h2>
+            <h2 id={styles.userName}>Ronnildo</h2>
         </div>
     </div>);
 }
