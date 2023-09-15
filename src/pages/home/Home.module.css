@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -24,35 +24,38 @@ body{
     font-style: normal;
     font-weight: bold;
     line-height: normal;
+    margin: 0;
 }
 
 #subtitle {
-    padding-top: 10px;
     color: #FFF;
+    margin: 0 5px;
     text-align: center;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    justify-self: start;
     text-align: start;
 }
 
 .user {
     display: flex;
+    margin: 0;
+    padding: auto;
 }
 
 #userAb {
+    margin: 0;
     background-color: #F7B608;
     border-radius: 30%;
     width: 60px;
-    height: 60px;
+    height: 40px;
     justify-self: center;
     align-self: center;
     text-align: center;
     padding-top: 10px;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 
@@ -78,36 +81,52 @@ body{
     padding: 10px;
 }
 
-.headerTable{
+.headerTable {
     display: flex;
-    padding: 20px;
-    height: 64px;
+    padding: 10px;
+    height: 50px;
     background-color: #172234;
-    justify-content: space-around;
+    margin: 0;
 }
 
 
-.headerContains{
+.headerContains {
+    display: grid;
+    grid-template-columns: 200px 140px 100px 160px 130px 28vw 0;
+    margin: 0 40px 0 36px;
+}
+
+.data {
     display: flex;
     justify-content: space-between;
-    text-align: center;
 }
 
-#actions {
-    padding-left: 30vw;
+#list {
+    display: inline;
+
 }
 
-.headerContains h3{
-    display: flex;
-    margin: 0 80px 0 0;
-}
-
-.dataContainer #lista ul{
+.dataContainer li {
+    display: inline;
     list-style: none;
-} 
-.dataContainer  li{
-    display: inline-block;
-    margin: 0 20px;
-    text-align: center;
+    margin: 0 46px 0 0;
+    text-align: start;
     font-size: 20px;
-} 
+}
+
+#ocurrences {
+    margin: 60px;
+    padding-left: 0;
+}
+.checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.actionsData{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    padding: 0;
+}

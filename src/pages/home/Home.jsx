@@ -1,7 +1,11 @@
+import { useState } from "react";
 import Header from "../../components/Header";
+import Switch from "../../components/SwitchButton";
 import styles from "./Home.module.css";
-
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const HomePage = () => {
+    const [value, setValue] = useState(false);
     return (
         <>
             <Header styles={styles} />
@@ -16,20 +20,27 @@ const HomePage = () => {
                         <h3>FAILED</h3>
                         <h3 id={styles.actions}>ACTIONS</h3>
                     </div>
-                   
+
                 </div>
                 <hr id="divider" />
-                <div id="lista">
-                    <ul>
-                        <li>144.224.23.49</li>
-                        <li>administrador</li>
-                        <li>40562</li>
-                        <li>5</li>
-                        <li>5</li>
-                        <li>2</li>
-                    </ul>
+                <div className={styles.data}>
+                    <div id={styles.list}>
+                        <ul>
+                            <li>144.224.23.49</li>
+                            <li>administrador</li>
+                            <li>40562</li>
+                            <li id={styles.ocurrences}>5</li>
+                            <li id={styles.ocurrences}>5</li>
+                            <li id={styles.ocurrences}>2</li>
+                        </ul>
+                    </div>
+                    <div className={styles.actionsData}>
+                        <a id={styles.details} href="./details">
+                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} fixedWidth size="40"/>
+                        </a>
+                        <Switch isOn={value} handleToggle={() => setValue(!value)} onColor="#F10707"></Switch>
+                    </div>
                 </div>
-                <button value="Click">Enviar</button>
             </div>
 
 

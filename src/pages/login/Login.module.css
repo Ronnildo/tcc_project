@@ -16,11 +16,12 @@
     height: 60vh;
     box-shadow: 4px 4px 6px 2px rgba(184, 184, 184, 0.15);
     border-radius: 30px;
+    align-items: center;
 }
 
 .labelForm, input{
-    padding: 10px;
-    margin: 10px;
+    margin: 20px 40px 0 10px;
+    padding-left: 8px;
 }
 
 #titleLogin {
@@ -39,8 +40,8 @@
     flex-shrink: 0;
     border-radius: 30px;
     background: #172234;
-    margin-bottom: 4;
-    padding: 10px;
+    padding: auto;
+    align-items: start;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -63,7 +64,7 @@ input[type="password"]::placeholder {
     font-size: 10px;
     justify-self: end;
     color: white;
-    margin-left: 28vw;
+    margin-left: 32vw;
 }
 
 a:hover {
@@ -83,7 +84,7 @@ a:hover {
     color: white;
     font-size: 24px;
     font-weight: bold;
-    margin-left: 10vw;
+    margin-left: 12vw;
     width: 16vw;
     height: 4vw;
 }
